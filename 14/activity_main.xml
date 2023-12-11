@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Выпадающий список для выбора города вылета -->
+    <Spinner
+        android:id="@+id/spinnerDeparture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:prompt="@string/departure_city_prompt" />
+
+    <!-- Выпадающий список для выбора города прилета -->
+    <Spinner
+        android:id="@+id/spinnerArrival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerDeparture"
+        android:layout_margin="16dp"
+        android:prompt="@string/arrival_city_prompt" />
+
+    <!-- Текстовое поле для ввода даты вылета -->
+    <EditText
+        android:id="@+id/editTextDepartureDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerArrival"
+        android:layout_margin="16dp"
+        android:hint="@string/departure_date_hint" />
+
+    <!-- Текстовое поле для ввода даты прилета -->
+    <EditText
+        android:id="@+id/editTextArrivalDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDepartureDate"
+        android:layout_margin="16dp"
+        android:hint="@string/arrival_date_hint" />
+
+    <!-- Текстовые поля для числа пассажиров -->
+    <EditText
+        android:id="@+id/editTextAdults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextArrivalDate"
+        android:layout_margin="16dp"
+        android:hint="@string/adults_hint" />
+
+    <EditText
+        android:id="@+id/editTextChildren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextArrivalDate"
+        android:layout_margin="16dp"
+        android:layout_toEndOf="@id/editTextAdults"
+        android:hint="@string/children_hint" />
+
+    <EditText
+        android:id="@+id/editTextInfants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextArrivalDate"
+        android:layout_margin="16dp"
+        android:layout_toEndOf="@id/editTextChildren"
+        android:hint="@string/infants_hint" />
+
+    <!-- Кнопка поиска -->
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAdults"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/search" />
+
+</RelativeLayout>

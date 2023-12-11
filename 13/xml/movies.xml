@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="movies">
+        <item>Начало</item>
+        <item>Матрица</item>
+        <item>Звездные войны: Эпизод IV – Новая надежда</item>
+        <item>Властелин колец: Братство кольца</item>
+        <item>Назад в будущее</item>
+        <item>Игра престолов</item>
+        <item>Храброе сердце</item>
+    </string-array>
+</resources>
